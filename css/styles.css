@@ -36,7 +36,6 @@ section {
 .section-title, .section-subtitle {
     font-weight: 700;
     color: var(--color-primary);
-    text-align: center;
 }
 
 .section-title {
@@ -50,7 +49,6 @@ section {
 .section-info {
     font-size: 1.4em;
     color: var(--color-secondary);
-    text-align: center;
 }
 
 .section-info-highlight {
