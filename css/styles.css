@@ -1,4 +1,21 @@
 :root {
     --font-family-primary: 'Open Sans', sans-serif;
     --font-family-accent: 'Lobster', cursive;
+    --color-primary: #384855;
+    --color-secondary: #7E93A7;
+    --color-accent: #273340;
+}
+
+.navbar-brand, .nav-link {
+    font-size: 2em;
+    color: var(--color-accent) !important;
+}
+
+.navbar-brand {
+    font-family: var(--font-family-accent);
+}
+
+.nav-link {
+    font-family: var(--font-family-primary);
+    font-weight: 700;
 }
