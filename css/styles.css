@@ -47,6 +47,17 @@ section {
     font-size: 1.5em;
 }
 
+.section-info {
+    font-size: 1.4em;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.section-info-highlight {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
 .speaker-card img {
     width: 100%;
     border-radius: 10px;
