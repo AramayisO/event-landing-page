@@ -4,6 +4,11 @@
     --color-primary: #384855;
     --color-secondary: #7E93A7;
     --color-accent: #273340;
+    --color-divider: #ECF1F5;
+}
+
+body {
+    font-family: var(--font-family-primary);
 }
 
 .navbar-brand, .nav-link {
@@ -22,4 +27,38 @@
 
 .hero {
     height: 100vh;
+}
+
+section {
+    border-bottom: 1px solid var(--color-divider);
+}
+
+.section-title, .section-subtitle {
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+}
+
+.section-subtitle {
+    font-size: 1.5em;
+}
+
+.speaker-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.speaker-card-name {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.speaker-card-bio, .speaker-card-handle {
+    font-size: 1.2em;
+    color: var(--color-secondary);
 }
