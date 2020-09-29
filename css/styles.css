@@ -48,8 +48,26 @@ body {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 15px 0px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * Hero
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .hero {
     height: 100vh;
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header {
+    font-size: 4em;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-subheader {
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
 }
 
 section {
