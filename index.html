@@ -5,13 +5,128 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <title>Moqups</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&display=swap"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top px-sm-5 py-4">
+        <div class="container-fluid px-lg-5">
+          <a class="navbar-brand" href="#">moqups</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link mr-3" href="#speakers">Speakers</a>
+              <a class="nav-link mr-3" href="#tickets">Tickets</a>
+              <a class="nav-link" href="#venue">Venue</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <div class="hero jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center">
+        <p class="hero-header text-center">Shades of Grey</p>
+        <p class="hero-subheader text-center mb-5">Discover the power of black and white photography.</p>
+        <button class="btn btn-lg btn-light text-uppercase font-weight-bold">Get the Ticket</button>
+      </div>
+    </header>
+
+    <!-- Speakers -->
+    <section class="container-fluid py-5">
+      <p class="section-title text-center pb-3">The Speakers</p>
+      <p class="section-subtitle text-center pb-3">Write a few lines about the event speakers to highlight their expertiese in the field</p>
+
+      <dir class="row pl-5 pr-5 py-5">
+        <div class="col ml-5 mr-5 speaker-card">
+          <img src="img/ruby-jennings.jpg" alt="Portrait of Ruby Jennings.">
+          <p class="speaker-card-name">Ruby Jennings</p>
+          <p class="speaker-card-bio">Product Manager at Moqups. Runner, parent and coffee lover.</p>
+          <p class="speaker-card-handle">@username</p>
+        </div>
+  
+        <div class="col ml-5 mr-5 speaker-card">
+          <img src="img/leon-hanson.jpg" alt="Portrait of Leon Hanson.">
+          <p class="speaker-card-name">Leon Hanson</p>
+          <p class="speaker-card-bio">Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+          <p class="speaker-card-handle">@username</p>
+        </div>
+  
+        <div class="col ml-5 mr-5 speaker-card">
+          <img src="img/meghan-stone.jpg" alt="Portrait of Meghan Stone.">
+          <p class="speaker-card-name">Meghan Stone</p>
+          <p class="speaker-card-bio">Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+          <p class="speaker-card-handle">@username</p>
+        </div>
+  
+        <div class="col ml-5 mr-5 speaker-card">
+          <img src="img/willie-perkins.jpg" alt="Portrait of Willie Perkins.">
+          <p class="speaker-card-name">Willie Perkins</p>
+          <p class="speaker-card-bio">UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+          <p class="speaker-card-handle">@username</p>
+        </div>
+      </dir>
+    </section>
+
+    <!-- Tickets -->
+    <section class="pt-5 pb-5">
+      <p class="section-title text-center">Get Your Ticket Today!</p>
+      <p class="section-info text-center pt-5 pb-5">
+        Each ticket includes:
+        <span class="section-info-highlight">20</span> speakers, 
+        <span class="section-info-highlight">1000</span> participants,
+        <span class="section-info-highlight">15</span> sessions,
+        <span class="section-info-highlight">5</span> keynotes
+      </p>
+      <div class="text-center">
+        <button class="btn btn-lg btn-dark text-uppercase font-weight-bold">Buy Ticket $149</button>
+      </div>
+    </section>
+
+    <!-- Venue -->
+    <section class="container-fluid p-5">
+      <div class="row px-5">
+        <div class="col-lg-6 col">
+          <p class="section-title">The Venue</p>
+          <p class="section-info">
+            Our event will be held at the 
+            <span class="section-info-highlight">Main headquarters at Empire State Building 20 W 34th St, New York, NY</span>
+          </p>
+        </div>
+      </div>
+      <div class="row pl-5 pr-5">
+        <div class="col">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12090.470068520659!2d-73.985664!3d40.748441!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1601332596955!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="col">
+          <img src="img/empire-state-building.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="row p-5">
+        <div class="col pl-5 d-flex align-items-center">
+          <i class="fab fa-twitter mr-4"></i>
+          <i class="fab fa-instagram mr-4"></i>
+          <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="col pr-5 d-flex justify-content-end align-items-center ">
+          <p>&copy; 2019 Moqups</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
