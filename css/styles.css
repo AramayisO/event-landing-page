@@ -1,3 +1,6 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * CSS Custom Properties
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 :root {
     --font-family-primary: 'Open Sans', sans-serif;
     --font-family-accent: 'Lobster', cursive;
@@ -7,22 +10,42 @@
     --color-divider: #ECF1F5;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * Default styling
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 body {
     font-family: var(--font-family-primary);
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * Navbar
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ nav {
+     background-color: white;
+     transition: all ease 0.5s;
+ }
+
 .navbar-brand, .nav-link {
-    font-size: 2em;
     color: var(--color-accent) !important;
 }
 
 .navbar-brand {
     font-family: var(--font-family-accent);
+    font-size: 3em;
 }
 
 .nav-link {
-    font-family: var(--font-family-primary);
+    font-size: 1.8em;
     font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--color-secondary) !important;
+}
+
+.navbar-scrolled {
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 15px 0px;
 }
 
 .hero {
@@ -80,4 +103,17 @@ footer i {
 footer p {
     font-size: 1.5em;
     color: var(--color-primary)
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Media queries
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (max-width: 575px) {
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    .nav-link {
+        font-size: 1.3em;
+    }
 }
